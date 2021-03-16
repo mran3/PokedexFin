@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="X4G-IO-yQG" customClass="PokemonListTVCell" customModule="Pokedex" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X4G-IO-yQG" id="RWQ-3s-Ish">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YV3-G9-kVa">
+                        <rect key="frame" x="20" y="13" width="49" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="JtY-9q-PlY"/>
+                            <constraint firstAttribute="height" constant="49" id="WiC-QC-cir"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-7r-sZ8">
+                        <rect key="frame" x="82" y="13" width="46.5" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="P2b-A8-hoF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                        <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dN-GQ-hUH">
+                        <rect key="frame" x="82" y="39" width="36.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fBo-7k-byS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-Tx-2jF">
+                        <rect key="frame" x="325" y="17.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" placeholder="YES" id="8LH-Ky-6QZ"/>
+                            <constraint firstAttribute="height" constant="40" id="XOr-65-hLk"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="cZa-7r-sZ8" firstAttribute="leading" secondItem="YV3-G9-kVa" secondAttribute="trailing" constant="13" id="BhP-3r-U5e"/>
+                    <constraint firstAttribute="trailing" secondItem="a0v-Tx-2jF" secondAttribute="trailing" constant="10" id="KFF-Tp-GBh"/>
+                    <constraint firstItem="cZa-7r-sZ8" firstAttribute="top" secondItem="YV3-G9-kVa" secondAttribute="top" id="T97-RN-I9j"/>
+                    <constraint firstItem="a0v-Tx-2jF" firstAttribute="centerY" secondItem="RWQ-3s-Ish" secondAttribute="centerY" id="bJr-cb-lps"/>
+                    <constraint firstItem="YV3-G9-kVa" firstAttribute="centerY" secondItem="RWQ-3s-Ish" secondAttribute="centerY" id="bSH-Cc-Aat"/>
+                    <constraint firstItem="YV3-G9-kVa" firstAttribute="leading" secondItem="RWQ-3s-Ish" secondAttribute="leading" constant="20" id="gLh-vQ-9Zj"/>
+                    <constraint firstItem="0dN-GQ-hUH" firstAttribute="top" secondItem="cZa-7r-sZ8" secondAttribute="bottom" id="s1E-kA-xr8"/>
+                    <constraint firstItem="0dN-GQ-hUH" firstAttribute="leading" secondItem="YV3-G9-kVa" secondAttribute="trailing" constant="13" id="vMS-M6-oh2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="nameLabel" destination="cZa-7r-sZ8" id="hfc-fE-UCC"/>
+                <outlet property="numberLabel" destination="0dN-GQ-hUH" id="jdY-ES-XqU"/>
+                <outlet property="pockemonImageView" destination="YV3-G9-kVa" id="XuG-bA-cmN"/>
+                <outlet property="skillsStackView" destination="a0v-Tx-2jF" id="UVv-NY-UQ6"/>
+            </connections>
+            <point key="canvasLocation" x="-461.59420289855075" y="-122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
