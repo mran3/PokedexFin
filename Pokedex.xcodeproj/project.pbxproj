@@ -132,7 +132,7 @@
 				22523E2B25FE94650000D856 /* Models */,
 				22523E2625FE93D70000D856 /* API */,
 				2277DDA325FCE70C0023146E /* Extensions */,
-				2277DDA025FCE4260023146E /* PockemonListVC */,
+				2277DDA025FCE4260023146E /* PokemonListVC */,
 				22B3552A25FED75F00A92BDC /* PokemonDetailsVC */,
 				2262FA8625FBF61A00C7A3CB /* AppDelegate.swift */,
 				2262FA8825FBF61A00C7A3CB /* SceneDelegate.swift */,
@@ -144,13 +144,13 @@
 			path = Pokedex;
 			sourceTree = "<group>";
 		};
-		2277DDA025FCE4260023146E /* PockemonListVC */ = {
+		2277DDA025FCE4260023146E /* PokemonListVC */ = {
 			isa = PBXGroup;
 			children = (
 				2277DDB225FCF43C0023146E /* Cell */,
 				2262FA8A25FBF61A00C7A3CB /* PokemonListVC.swift */,
 			);
-			path = PockemonListVC;
+			path = PokemonListVC;
 			sourceTree = "<group>";
 		};
 		2277DDA325FCE70C0023146E /* Extensions */ = {

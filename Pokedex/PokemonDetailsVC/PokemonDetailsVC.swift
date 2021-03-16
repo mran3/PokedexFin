@@ -115,7 +115,7 @@ class PokemonDetailsVC: UIViewController {
     fileprivate func drawProgresGradientView(to view: UIView, value: Int) {
         let layer = CAGradientLayer()
         layer.frame = CGRect(origin: view.bounds.origin,
-                             size: CGSize(width: ((view.bounds.width * CGFloat(value)) / 100) + CGFloat(value)/9,
+                             size: CGSize(width: (view.bounds.width * CGFloat(value) / 110),
                                           height: view.bounds.height))
         layer.startPoint = CGPoint(x: 0, y: 0.5)
         layer.endPoint = CGPoint(x: 1, y: 0.5)
